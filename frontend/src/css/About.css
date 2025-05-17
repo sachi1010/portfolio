@@ -1,0 +1,15 @@
+.about-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.about-content{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+.about-left{
+    border: 1px solid white;
+}

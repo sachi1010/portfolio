@@ -1,0 +1,18 @@
+.skills{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color:white;
+    margin-top: 150px;
+}
+.skill-card{
+    height: 200px;
+    width: 200px;
+}
+.skill-list{
+   display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr ;
+    grid-gap:50px;
+}

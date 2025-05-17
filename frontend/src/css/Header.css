@@ -1,0 +1,21 @@
+.navbar-brand{
+    margin-left: 50px;
+    color: white;
+    font-weight: 600;
+    font-size: 2em;
+}
+.navbar-collapse{
+    margin-left: 700px;
+}
+.navbar{
+    background-color: #031939 !important;
+    color: white !important;
+}
+.nav-item .nav-link{
+    color: white;
+    font-weight: 400;
+    font-size: 20px;
+}
+.nav-item .nav-link:hover{
+    color: rgb(235, 243, 6) !important;
+}
