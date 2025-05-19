@@ -1,77 +1,73 @@
-.footer-content{
-    display: flex;
-    justify-content: space-around;
-    background-color: #02132c;
-     /* align-items: center;  */
-    height: 500px;
-    flex-wrap: wrap;
-}
-.footer-content h3{
-    color: whitesmoke;
-    text-align: center;
-}
-.quick-links{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-.feedback-form{
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-}
-.footer-content .social-links{
-    margin-top: 100px;
-}
-.quick-links a{
-    text-decoration: none;
-    text-align: center;
-    color: wheat;
-    font-size: 20px;
-    line-height: 40px;
-}
-.quick-links a:hover{
-    text-decoration:underline;
-}
-.social-links p{ 
-    color: wheat;
-    font-size: 20px;
-}
-.feedback-form label{
-     color: wheat;
-     margin-bottom: 10px;
-     font-size: 20px;
-}
-.feedback-form input{
-    height: 40px;
-    width: 280px;
-    border: 1px solid #1268e9;
-    outline: none;
-    font-size: 20px;
-    border-radius: 4px;
-    background-color: transparent;
-    color: white;
-    padding: 10px;
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  background-color:  #02132c;
+  color: #fff;
+   padding: 40px 20px; 
 }
 
-.feedback-form ::placeholder{
-    color: rgb(211, 98, 5);
-    padding: 10px;
+
+.footer-content h3 {
+  margin-bottom: 15px;
+  color: #00bcd4;
+  font-size: 18px;
 }
-.feedback-form input:hover{
-    border:  1px solid rgb(216, 43, 4);
+
+/* Quick Links */
+.quick-links a {
+  display: block;
+  color: #bbb;
+  text-decoration: none;
+  margin-bottom: 8px;
+  font-size: 18px;
 }
-.feedback-form textarea{
-    height: 100px;
-    outline: none;
-    background-color: transparent;
-     border: 1px solid #1268e9;
-     padding: 10px;
-     color: white;
-     border-radius: 4px;
+
+.quick-links a:hover {
+  color: #fff;
+  text-decoration: underline;
 }
-.feedback-form textarea:hover{
-     border:  1px solid rgb(216, 43, 4);
+
+/* Social Media */
+.social-links p {
+  margin: 5px 0;
+  font-size: 18px;
+  color: #ccc;
+}
+
+.social-links a {
+  font-size: 22px;
+}
+
+
+/* Hire Me Section */
+.hire-me-section {
+  color: #fff;
+}
+
+.hire-me-section h3 {
+  color: #00bcd4;
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.hire-me-section p {
+  margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.hire-me-btn {
+  display: inline-block;
+  background-color: #00bcd4;
+  color: black;
+  padding: 10px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background 0.3s ease;
 }
 .footer-content .social-links .bi-github{
    color: mediumslateblue; 
@@ -84,4 +80,21 @@
 }
 .footer-content .social-links .bi-facebook{
     color: rgb(3, 139, 236);
+}
+
+.hire-me-btn:hover {
+  background-color: #0097a7;
+}
+
+/* Responsive layout */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-content > div {
+    width: 100%;
+    margin: 10px;
+  }
 }
