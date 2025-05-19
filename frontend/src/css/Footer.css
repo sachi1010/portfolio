@@ -1,0 +1,87 @@
+.footer-content{
+    display: flex;
+    justify-content: space-around;
+    background-color: #02132c;
+     /* align-items: center;  */
+    height: 500px;
+    flex-wrap: wrap;
+}
+.footer-content h3{
+    color: whitesmoke;
+    text-align: center;
+}
+.quick-links{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.feedback-form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+.footer-content .social-links{
+    margin-top: 100px;
+}
+.quick-links a{
+    text-decoration: none;
+    text-align: center;
+    color: wheat;
+    font-size: 20px;
+    line-height: 40px;
+}
+.quick-links a:hover{
+    text-decoration:underline;
+}
+.social-links p{ 
+    color: wheat;
+    font-size: 20px;
+}
+.feedback-form label{
+     color: wheat;
+     margin-bottom: 10px;
+     font-size: 20px;
+}
+.feedback-form input{
+    height: 40px;
+    width: 280px;
+    border: 1px solid #1268e9;
+    outline: none;
+    font-size: 20px;
+    border-radius: 4px;
+    background-color: transparent;
+    color: white;
+    padding: 10px;
+}
+
+.feedback-form ::placeholder{
+    color: rgb(211, 98, 5);
+    padding: 10px;
+}
+.feedback-form input:hover{
+    border:  1px solid rgb(216, 43, 4);
+}
+.feedback-form textarea{
+    height: 100px;
+    outline: none;
+    background-color: transparent;
+     border: 1px solid #1268e9;
+     padding: 10px;
+     color: white;
+     border-radius: 4px;
+}
+.feedback-form textarea:hover{
+     border:  1px solid rgb(216, 43, 4);
+}
+.footer-content .social-links .bi-github{
+   color: mediumslateblue; 
+}
+.footer-content .social-links .bi-whatsapp{
+    color: rgb(3, 212, 3);
+}
+.footer-content .social-links .bi-linkedin{
+    color: rgb(20, 20, 236);
+}
+.footer-content .social-links .bi-facebook{
+    color: rgb(3, 139, 236);
+}

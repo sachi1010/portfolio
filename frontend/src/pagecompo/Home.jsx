@@ -1,11 +1,12 @@
 import React from 'react'
 import '../css/Home.css'
-import About from './About'
-import Skills from './Skills'
+import About from './About';
+import Skills from './Skills';
+import {Contact} from './Contact';
 export const Home = () => {
     return (
         <>
-            <div className='profile-content'>
+            <div className='profile-content' id='home-section'>
                 <div className='profile-left'>
                     <h2 id='hello'>HELLO !!</h2>
                     <h1 id='name'> I AM MANI<span>KANDAN</span></h1>
@@ -15,7 +16,7 @@ export const Home = () => {
                         <a href=""><i class="bi bi-whatsapp"></i></a>
                         <a href=""><i class="bi bi-linkedin"></i></a>
                         <a href=""><i class="bi bi-facebook"></i></a>
-                    </div>
+                    </div> 
                     <div className='profile-button'>
                         <button className='contact'>Contact Me!</button>
                         <button className='resume'>Resume <i class="bi bi-download"></i></button>
@@ -27,6 +28,7 @@ export const Home = () => {
             </div>
             <About/>
             <Skills/>
+            <Contact/> 
         </>
     )
 }

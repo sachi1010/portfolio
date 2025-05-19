@@ -8,6 +8,7 @@ import Skills from './pagecompo/Skills';
 import {Experience} from './pagecompo/Experience'
 import {Projects} from './pagecompo/Projects';
 import {Contact} from './pagecompo/Contact';
+import { Footer } from './components/Footer';
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/projects" element={<Projects />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer/>
     </Router>
   );
 }
