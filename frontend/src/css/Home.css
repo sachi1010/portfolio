@@ -1,4 +1,4 @@
-.profile-content{
+/* .profile-content{
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -54,4 +54,143 @@
 .bi-download{
     font-size: 20px;
     font-weight: 800;
+} */
+
+
+.profile-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url(./images/profilebg.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+    padding: 20px;
+    gap: 20px;
+    flex-wrap: wrap; /* Allows content to wrap on small screens */
+    text-align: center;
+}
+
+.profile-left {
+    color: black;
+    flex: 1;
+    min-width: 280px;
+}
+
+.profile-right {
+    background-color: black;
+    flex: 1;
+    min-width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.profile-button .contact,
+.profile-button .resume {
+    margin: 10px;
+    padding: 10px 16px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: rgba(255, 17, 0, 0.726);
+    border: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-button .contact:hover,
+.profile-button .resume:hover {
+    background-color: rgba(255, 17, 0, 0.9);
+}
+
+.social-links a {
+    margin: 12px;
+    font-size: 30px;
+    color: black;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+#name {
+    font-weight: bold;
+    font-size: 32px;
+}
+
+#name span {
+    color: #ff1a00;
+}
+
+#edu,
+#hello {
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+.bi-whatsapp {
+    color: #02772d;
+}
+
+.bi-linkedin {
+    color: #02468a;
+}
+
+.bi-facebook {
+    color: #047192;
+}
+
+.bi-github {
+    color: #3e0496;
+}
+
+.bi-download {
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* ---------- Responsive Styles ---------- */
+@media (max-width: 1024px) {
+    .profile-content {
+        flex-direction: column;
+        height: auto;
+    }
+    .profile-left, .profile-right {
+        text-align: center;
+        width: 100%;
+    }
+}
+
+@media (max-width: 768px) {
+    #name {
+        font-size: 26px;
+    }
+
+    .profile-button .contact,
+    .profile-button .resume {
+        font-size: 16px;
+        padding: 8px 12px;
+    }
+
+    #edu,
+    #hello {
+        font-size: 18px;
+    }
+
+    .social-links a {
+        font-size: 26px;
+    }
+}
+
+@media (max-width: 480px) {
+    #name {
+        font-size: 22px;
+    }
+
+    .social-links a {
+        font-size: 24px;
+        margin: 8px;
+    }
 }
