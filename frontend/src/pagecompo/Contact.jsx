@@ -23,7 +23,7 @@ export const Contact = () => {
   };
 
   return (
-    <div className="contact-container">
+    <div className="contact-container" id='contact-section'>
        <div className="contact-form-wrapper">
       <h1>Contact Me</h1>
       <form onSubmit={handleSubmit} className="contact-form">
@@ -32,7 +32,6 @@ export const Contact = () => {
 
         <label htmlFor="email">Email</label>
         <input type="email"  name="email"  id="email"  placeholder="Enter Your Email"   value={formData.email}   onChange={handleChange} required/>
-
 
         <label htmlFor="message">Message</label>
         <textarea  name="message"  id="message"  rows="4"  placeholder="Write your message here..."  value={formData.message}  onChange={handleChange}   required  ></textarea>

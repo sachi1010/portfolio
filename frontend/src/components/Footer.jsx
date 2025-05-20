@@ -11,13 +11,13 @@ export const Footer = () => {
         <a href="#skill-section">Skills</a>
         <a href="">Experience</a>
         <a href="">Projects</a>
-        <a href="">Contact</a>
+        <a href="#contact-section">Contact</a>
       </div>
 
       <div className='social-links'>
         <h3>SocialMedia Links</h3>
-        <p>Phone : </p>
-        <p>Email : </p>
+        <p><i class="bi bi-telephone-fill"></i>Phone : </p>
+        <p><i class="bi bi-envelope-fill"></i>Email : </p>
         <a href=""><i class="bi bi-github"></i></a>
         <a href=""><i class="bi bi-whatsapp"></i></a>
         <a href=""><i class="bi bi-linkedin"></i></a>
@@ -25,10 +25,10 @@ export const Footer = () => {
       </div>
 
       <div className="hire-me-section">
-        <h3>Let’s Work Together</h3>
+        <h3>Let's Work Together</h3>
         <p>
           I'm open to freelance projects, internships, <br/> and full-time roles.
-          If you like what<br/> you see, don’t hesitate to reach out!
+          If you like what<br/> you see, don't hesitate to reach out!
         </p>
        <a href="mailto:sachisachi8567@gmail.com" className="hire-me-btn">Hire Me</a>
       </div>
