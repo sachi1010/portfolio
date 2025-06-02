@@ -103,3 +103,22 @@
     margin: 10px;
   }
 }
+
+
+
+.footer-content h3 {
+  margin-bottom: 1rem;
+  color: #ffcc00;
+}
+
+
+/* Copyright style */
+.copyright {
+  text-align: center;
+  margin-top: 2rem;
+  padding-top: 1rem;
+  border-top: 1px solid #333;
+  font-size: 0.9rem;
+  color: #888;
+  width: 100%;
+}

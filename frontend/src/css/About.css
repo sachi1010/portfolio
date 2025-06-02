@@ -1,7 +1,6 @@
 
 .about-section {
-      padding: 2rem;
-      /* background-color: #031939; */
+      padding: 8rem;
     }
     .about-section h1 {
       text-align: center;
@@ -11,7 +10,7 @@
     }
     .about-content {
       display: flex;
-      gap: 1rem;
+      gap: 4rem;
       align-items: center;
       justify-content: center;
       flex-wrap: wrap;

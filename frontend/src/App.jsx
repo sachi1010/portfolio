@@ -1,6 +1,5 @@
 import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-
 import { Header } from './components/Header';
 import { Home } from './pagecompo/Home';
 import About from './pagecompo/About';
@@ -10,6 +9,7 @@ import {Projects} from './pagecompo/Projects';
 import {Contact} from './pagecompo/Contact';
 import { Footer } from './components/Footer';
 function App() {
+ 
   return (
     <Router>
       <Header />

@@ -1,8 +1,13 @@
-
-import React, { useState } from 'react';
+import React, { useEffect } from 'react';
+import { useState } from 'react';
 import '../css/Contact.css';
+import AOS from 'aos';
 
 export const Contact = () => {
+   useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -26,7 +31,7 @@ export const Contact = () => {
     <div className="contact-container" id='contact-section'>
        <div className="contact-form-wrapper">
       <h1>Contact Me</h1>
-      <form onSubmit={handleSubmit} className="contact-form">
+      <form onSubmit={handleSubmit} className="contact-form" data-aos="fade-up">
         <label htmlFor="name">Name</label>
         <input  type="text"  name="name"  id="Name"  placeholder="Enter Your Name"  value={formData.name}  onChange={handleChange}  required/>
 
