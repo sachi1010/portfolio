@@ -9,6 +9,9 @@ export const Projects = () => {
 
   return (
     <div className="projects-container " id='project-section'>
+      <div className='project-container'>
+
+    
       <h1 data-aos="fade-down" className="projects-title ">
         Projects
       </h1>
@@ -51,5 +54,6 @@ export const Projects = () => {
         </div>
       </div>
     </div>
+      </div>
   );
 };

@@ -1,11 +1,10 @@
 /* Navbar Base */
 .navbar {
-  background-color: #031939 !important;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  background-color: #0e1323!important;
   padding: 12px 24px;
   position: sticky;
   top: 0;
-  z-index: 1000;
+  
 }
 
 /* Brand Logo */
@@ -20,7 +19,7 @@
 .navbar-nav {
   align-items: center;
   gap: 20px;
-  margin-left: 300px;
+  margin-left: 600px;
 }
 
 .navbar-nav .nav-link {

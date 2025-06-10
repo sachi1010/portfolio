@@ -2,7 +2,7 @@ import './App.css';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { Header } from './components/Header';
 import { Home } from './pagecompo/Home';
-import About from './pagecompo/About';
+import {About} from './pagecompo/About';
 import Skills from './pagecompo/Skills';
 import {Experience} from './pagecompo/Experience'
 import {Projects} from './pagecompo/Projects';

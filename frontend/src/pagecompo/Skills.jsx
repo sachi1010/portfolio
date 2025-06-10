@@ -10,6 +10,7 @@ const Skills = () => {
 
   return (
     <div className="skills-section" id="skill-section">
+      <div className='skill-container'>
       <h1 className="section-title" data-aos="fade-down">Skills</h1>
       <h2 className="subtitle" data-aos="fade-up">Software Skills</h2>
       <div className="skill-list">
@@ -29,22 +30,23 @@ const Skills = () => {
           <img src="./images/office.png" alt="" />
           <h3>Ms Office</h3>
         </div>
-        <div className="skill-card" data-aos="zoom-in" data-aos-delay="400">
+        <div className="skill-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="./images/3d.png" alt="" />
           <h3>3ds Max</h3>
         </div>
-        <div className="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <div className="skill-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="./images/p6.png" alt="" />
           <h3>Primavera</h3>
         </div>
-        <div className="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <div className="skill-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="./images/staad.png" alt="" />
           <h3>Staad Pro</h3>
         </div>
-        <div className="skill-card" data-aos="zoom-in" data-aos-delay="500">
+        <div className="skill-card" data-aos="zoom-in" data-aos-delay="300">
           <img src="./images/sketch.png" alt="" />
           <h3>Sketch Up</h3>
         </div>
+      </div>
       </div>
     </div>
   );

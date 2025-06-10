@@ -1,269 +1,122 @@
 
-.profile-left {
-    color: black;
-    flex: 1;
-    min-width: 280px;
-}
 
 
-.profile-button {
+  .hero-section {
   display: flex;
-  gap: 1rem;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap;
-  margin-top: 2rem;
-}
-
-
-.social-links a {
-    margin: 12px;
-    font-size: 30px;
-    color: black;
-    transition: transform 0.3s ease;
-}
-
-.social-links a:hover {
-    transform: scale(1.2);
-}
-
-#name {
-    font-weight: bold;
-    font-size: 32px;
-}
-
-#name span {
-    color: #ff1a00;
-}
-
-#edu,
-#hello {
-    font-weight: 600;
-    font-size: 20px;
-    margin-top: 10px;
-}
-
-.bi-whatsapp {
-    color: #02772d;
-    font-size: 30px;
-}
-
-.bi-linkedin {
-    color: #02468a;
-    font-size: 30px;
-}
-
-.bi-facebook {
-    color: #047192;
-    font-size: 30px;
-}
-
-.bi-github {
-    color: #3e0496;
-    font-size: 30px;
-}
-
-.bi-download {
-    font-size: 20px;
-    font-weight: 800;
-} 
-
-.profile-button .contact,
-.profile-button .resume {
-  width: 140px;
-  height: 50px;
-  color:black;
-  border-radius: 5px;
-  padding: 10px 25px;
-  font-size: 16px;
-  font-weight: bold;
-  background: transparent;
-  cursor: pointer;
-  transition: all 0.3s ease;
+  background: #0e1323;
+  color: white;
+  padding: 80px 10%;
   position: relative;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-   box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
-   7px 7px 20px 0px rgba(0,0,0,.1),
-   4px 4px 5px 0px rgba(0,0,0,.1);
-  outline: none;
-}
-
-.profile-button .contact,
-.profile-button .resume{
-  border: none;
-  transition: all 0.3s ease;
   overflow: hidden;
 }
-.profile-button .contact::after,
-.profile-button .resume::after{
-  position: absolute;
-  content: " ";
-  z-index: -1;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-   background-color: #1fd1f9;
-background-image: linear-gradient(315deg, #f91f1f 0%, #b621fe 74%);
-  transition: all 0.3s ease;
-}
-.profile-button .contact:hover,
-.profile-button .resume:hover {
-  background: transparent;
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
-  color: #fff;
-}
-.profile-button .contact:hover::after,
-.profile-button .resume:hover:after {
-  -webkit-transform: scale(2) rotate(180deg);
-  transform: scale(2) rotate(180deg);
-  box-shadow:  4px 4px 6px 0 rgba(255,255,255,.5),
-              -4px -4px 6px 0 rgba(116, 125, 136, .2), 
-    inset -4px -4px 6px 0 rgba(255,255,255,.5),
-    inset 4px 4px 6px 0 rgba(116, 125, 136, .3);
+
+.hero-left {
+  max-width: 600px;
 }
 
+.hero-left h3 {
+  font-size: 2rem;
+  color: #ffffff;
+  margin-bottom: 0.5rem;
+}
 
+.hero-left h1 {
+  font-size: 4rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
 
-.profile-content {
+.hero-left h2.hero-subtitle {
+  font-size: 1.5rem;
+  color: #ccc;
+  margin-bottom: 1rem;
+}
+
+.hero-desc {
+  color: #bbb;
+  margin-bottom: 2rem;
+}
+
+.hero-buttons {
   display: flex;
-  justify-content: flex-start;
+  gap: 20px;
   align-items: center;
-  padding: 4rem 2rem;
-  background: #f0f2f5;
-  min-height: 100vh;
-   background-image: url(./images/ai.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+  margin-top: 1rem;
 }
 
-.profile-right {
-  max-width: 700px;
-  text-align: center;
-  padding: 2rem;
-  /* background: #fff; */
-  border-radius: 16px;
-  margin-left: 100px;
+.btn.download-btn {
+  padding: 12px 25px;
+  border: 1px solid white;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  color: white;
+  transition: all 0.3s;
+}
+
+.btn.download-btn:hover {
+  background-color: #fea116;
+  color: #0e1323;
+  border-color: #fea116;
+}
+
+.hero-right {
+  position: relative;
+}
+
+.hero-image {
+  max-height: 500px;
+  width: auto;
+  z-index: 1;
+  position: relative;
+}
+
+.social-icons {
+  position: absolute;
+  right: -60px;
+  top: 20%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
   
 }
 
-.hero-container h2#hello {
-  font-size: 1.8rem;
-  font-weight: 600;
-  color: #555;
+.social-icons a {
+  background: #1c2236;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  color: white;
+  font-size: 1.2rem;
+  border: 1px solid #444;
+  transition: 0.3s;
 }
 
-.hero-container h1#name {
-  font-size: 2.5rem;
-  font-weight: 800;
-  margin: 1rem 0;
-  color: #222;
+.social-icons a:hover {
+  background-color: #fea116;
+  color: #0e1323;
 }
 
-
-.hero-container h2#edu {
-  font-size: 1.3rem;
-  /* color: #444; */
-  margin-top: 0.5rem;
-}
-
-
-.profile-button {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
-  margin-top: 1.5rem;
-}
-
-
-
-/* Tablet View (768px - 1024px) */
-@media (max-width: 1024px) {
-  .profile-content {
+/* Responsive */
+@media screen and (max-width: 900px) {
+  .hero-section {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 3rem 1rem;
-  }
-
-  .profile-left,
-  .profile-right {
-    width: 100%;
-    max-width: 100%;
-    padding: 1.5rem;
-    margin: 0 auto;
-  }
-
-  .profile-right {
-    margin-left: 0;
-  }
-
-  .hero-container h1#name {
-    font-size: 2.2rem;
-  }
-
-  .hero-container h2#edu,
-  .hero-container h2#hello {
-    font-size: 1.2rem;
-  }
-
-  .profile-button {
-    justify-content: center;
-  }
-
-  .social-links {
-    justify-content: center;
-  }
-}
-
-/* Mobile View (Below 768px) */
-@media (max-width: 768px) {
-  .profile-content {
-    flex-direction: column;
-    align-items: center;
-    padding: 2rem 1rem;
-    background-position: center;
-    text-align: center;
-    min-height: 400px;
-    background-image:url(./images/bg1.jpg) ;
-  }
-
-  .profile-left,
-  .profile-right {
-    width: 100%;
-    padding: 1rem;
     text-align: center;
   }
 
-  .profile-right {
-    margin-left: 0;
+  .hero-right {
+    margin-top: 2rem;
   }
 
-  .hero-container h1#name {
-    font-size: 1.8rem;
-  }
-
-  .hero-container h2#edu,
-  .hero-container h2#hello {
-    font-size: 1rem;
-  }
-
-  .profile-button .contact,
-  .profile-button .resume {
-    /* width: 120px; */
-    height: 45px;
-    font-size: 14px;
-  }
-
-  .social-links a {
-    font-size: 24px;
-    margin: 8px;
+  .social-icons {
+    position: static;
+    flex-direction: row;
+    justify-content: center;
+    transform: rotate(0);
+    margin-top: 20px;
   }
 }

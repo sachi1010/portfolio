@@ -4,7 +4,7 @@ import AOS from 'aos';
 import 'aos/dist/aos.css';
 import '../css/Home.css';
 import { TypeAnimation } from 'react-type-animation';
-import About from './About';
+import { About } from './About';
 import Skills from './Skills';
 import { Contact } from './Contact';
 import { Projects } from './Projects';
@@ -22,54 +22,60 @@ export const Home = () => {
   };
 
   return (
-    <>
-      <div className='profile-content' id='home-section'>
-        <div className='profile-right' data-aos="zoom-in">
-  <div className="hero-container">
-      <h2 id="hello">HELLO !!</h2>
-      <h1 id="name">
-        I AM MANI<span>KANDAN</span>
-      </h1>
-      <h2 id="edu">
-        I'm{' '}
-        <TypeAnimation
-          sequence={[
-            'a Civil Engineer',
-            2000,
-            'an AutoCAD Designer',
-            2000,
-            'a Freelancer',
-            2000,
-            'a Site Supervisor',
-            2000,
-          ]}
-          wrapper="span"
-          speed={50}
-          repeat={Infinity}
-        />
-      </h2>
-    </div>
-          <div className='social-links' data-aos="fade-up">
-            <a href=""><i className="bi bi-github"></i></a>
-            <a href=""><i className="bi bi-whatsapp"></i></a>
-            <a href=""><i className="bi bi-linkedin"></i></a>
-            <a href=""><i className="bi bi-facebook"></i></a>
-          </div>
-          <div className='profile-button' data-aos="zoom-in">
-            <button className='contact' onClick={goToContactPage}>Contact Me!</button>
-            <a href="/resume.pdf" target="_blank" rel="noopener noreferrer" className='resume'>
-              Resume <i className="bi bi-download"></i>
+    <section >
+      <div className="hero-section">
+        <div className="hero-left">
+          <h3>Hello! I'm</h3>
+          <h1>Manikandan</h1>
+          <h2 className="hero-subtitle">
+            I'm{' '}
+            <TypeAnimation
+              sequence={[
+                'a Civil Engineer',
+                2000,
+                'an AutoCAD Designer',
+                2000,
+                'a Freelancer',
+                2000,
+                'a Site Supervisor',
+                2000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+            />
+          </h2>
+          <p className="hero-desc">
+            Civil Engineer with a strong foundation in structural analysis and site planning, specializing in AutoCAD and modern project visualization tools. Passionate about delivering efficient, sustainable, and cost-effective infrastructure solutions through precise design and collaborative development.
+          </p>
+
+
+          <div className="hero-buttons">
+            <button onClick={goToContactPage}>Contact Me</button>
+            <a href="/resume.pdf" download className="btn download-btn">
+              Get Resume <i className="bi bi-download"></i>
             </a>
+
           </div>
         </div>
-        
-      </div>
 
+        <div className="hero-right">
+          <img src="/images/myimg.png" alt="profile" className="hero-image" />
+          <div className="social-icons">
+            <a href="#"><i className="bi bi-facebook"></i></a>
+            <a href="#"><i className="bi bi-whatsapp"></i></a>
+            <a href="#"><i className="bi bi-instagram"></i></a>
+            <a href="#"><i className="bi bi-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
       <About />
       <Skills />
-      <Experience/>
+      <Experience />
       <Contact />
       <Projects />
-    </>
+    </section>
+
   );
 };
+
+

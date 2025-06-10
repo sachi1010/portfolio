@@ -1,51 +1,75 @@
+
+
+
 .experience-section {
-  padding: 3rem 2rem;
-  text-align: center;
+  
+  color: white;
+  padding: 80px 40px;
 }
 
-.experience-section h2 {
-  font-size: 2rem;
-  margin-bottom: 2rem;
-  color:wheat;
+.experience-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.experience-container h1{
+  font-size: 2.8rem;
+  margin-bottom: 40px;
+  text-align: center;
+  color: wheat;
   font-weight: bold;
 }
 
-.experience-list {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-  width:86%;
-  margin: 0 auto;
+.experience-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 40px;
 }
 
 .experience-card {
-  background-color:#2591f095;
-  padding: 1.5rem 2rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-  text-align: left;
+  background: transparent;
+  padding: 20px;
+  border-radius: 10px;
+  position: relative;
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: transform 0.3s ease;
+}
+
+.experience-card:hover {
+  transform: translateY(-5px);
+}
+
+.experience-year {
+  display: inline-block;
+  padding: 8px 18px;
+  border: 1px solid #00ffab;
+  color: #00ffab;
+  font-weight: 500;
+  border-radius: 5px;
+  margin-bottom: 20px;
 }
 
 .experience-card h3 {
-  margin: 0;
-  color: black;
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 10px;
 }
 
 .experience-card h4 {
-  margin: 0.5rem 0;
-  color:white;
+  font-size: 1.1rem;
+  color: #cccccc;
+  margin-bottom: 10px;
 }
 
-.experience-card p,
-.experience-card ul {
-  margin: 0.5rem 0;
-  color: white;
+.experience-location {
+  font-size: 0.95rem;
+  color: #888;
+  margin-bottom: 10px;
 }
 
-.experience-card ul {
-  padding-left: 1.2rem;
-}
-
-.experience-card li {
-  margin-bottom: 0.3rem;
+.experience-projects {
+  list-style: disc;
+  margin-top: 10px;
+  padding-left: 20px;
+  color: #bbbbbb;
 }

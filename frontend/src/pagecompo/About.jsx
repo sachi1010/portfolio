@@ -1,33 +1,52 @@
-import React from 'react'
+
+import React from 'react';
+import '../css/About.css';
 import { useEffect } from 'react';
-import '../css/About.css'
 import AOS from 'aos';
 
-const About = () => {
-    useEffect(() => {
-      AOS.init({ duration: 1000 });
+export const About = () => {
+   
+     useEffect(() => {
+       AOS.init({ duration: 1000 });
     }, []);
 
-    return (
-        <>
-            <div class="about-section" id='About-section'>
-                <h1 data-aos="fade-up">ABOUT ME</h1>
-                <div class="about-content">
-                    <div class="about-left" data-aos="zoom-in">
-                        <p>
-                            I am a passionate Civil Engineer with expertise in structural analysis and design.
-                            With several years of experience in planning, drafting, and managing construction projects,
-                            I specialize in delivering safe and efficient structural solutions. My focus lies in utilizing
-                            modern software tools and sustainable practices to create long-lasting infrastructures.
-                        </p>
-                    </div>
-                    <div class="about-right" data-aos="zoom-in">
-                        <img src="./images/myimg.png" alt="About Me" />
-                    </div>
-                </div>
-            </div>
-        </>
-    )
-}
+  return (
+    <section className="about-section" id='About-section'>
+      <div className="about-container">
+        
+        {/* Left Text Section */}
+        <div className="about-text">
+          <h3 className="about-subtitle" data-aos="fade-up">About Me</h3>
+          <h1 className="about-title" data-aos="zoom-in">
+  Building the Future with Smart, Sustainable Structural Solutions
+</h1>
 
-export default About
+          <p className="about-description" data-aos="zoom-in">
+          
+                             I am a passionate Civil Engineer with expertise in structural analysis and design.
+                             With several years of experience in planning, drafting, and managing construction projects,
+                             I specialize in delivering safe and efficient structural solutions. My focus lies in utilizing
+                             modern software tools and sustainable practices to create long-lasting infrastructures.
+                         
+          </p>
+          <a href="./resume.pdf" download className="download-btn">
+            Download CV ⬇
+          </a>
+        </div>
+
+        {/* Right Image Section */}
+        <div className="about-image-wrapper" data-aos="zoom-in">
+          <div className="image-border"></div>
+          <img
+            src="./images/myimg.png"
+            alt="Sachithananthan"
+            className="about-image"
+            height='300px'
+          />
+         
+        </div>
+
+      </div>
+    </section>
+  );
+};
