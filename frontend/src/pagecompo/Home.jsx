@@ -51,7 +51,7 @@ export const Home = () => {
 
           <div className="hero-buttons">
             <button className="custom-btn btn-6" onClick={goToContactPage}><span>Contact Me</span></button>
-            <a href="http://localhost:5000/resume.pdf" download className=" custom-btn btn-6">
+            <a href="https://manikandan-folio.onrender.com/resume.pdf" download className=" custom-btn btn-6">
               Get Resume <i className="bi bi-download"></i>
             </a>
 
@@ -59,7 +59,7 @@ export const Home = () => {
         </div>
 
         <div className="hero-right">
-          <img src="http://localhost:5000/images/myimg.png" alt="profile" className="hero-image" />
+          <img src="https://manikandan-folio.onrender.com/images/myimg.png" alt="profile" className="hero-image" />
           <div className="social-icons">
             <a href="#"><i className="bi bi-facebook"></i></a>
             <a href="#"><i className="bi bi-whatsapp"></i></a>

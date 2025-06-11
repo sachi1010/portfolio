@@ -12,7 +12,7 @@ export const Projects = () => {
     // Fetch project data from backend
     const fetchProjects = async () => {
       try {
-        const res = await fetch('http://localhost:5000/projects');
+        const res = await fetch('https://manikandan-folio.onrender.com/projects');
         const data = await res.json();
         setProjects(data);
       } catch (error) {
