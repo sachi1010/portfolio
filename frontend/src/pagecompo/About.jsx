@@ -27,12 +27,12 @@ export const About = () => {
           <h3 className="about-subtitle" data-aos="fade-up">About</h3>
           <h1 className="about-title" data-aos="zoom-in">{data.title}</h1>
           <p className="about-description" data-aos="zoom-in">{data.description}</p>
-          <a href="https://manikandan-folio.onrender.com/resume.pdf" download className="download-btn">Download CV ⬇</a>
+          <a href="http://localhost:5000/resume.pdf" download className="download-btn">Download CV ⬇</a>
         </div>
 
         <div className="about-image-wrapper" data-aos="zoom-in">
           <div className="image-border"></div>
-          <img src="https://manikandan-folio.onrender.com/images/myimg.png"alt="mani" className="about-image" height="300px" />
+          <img src="http://localhost:5000/images/myimg.png"alt="mani" className="about-image" height="300px" />
         </div>
       </div>
     </section>
