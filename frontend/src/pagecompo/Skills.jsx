@@ -9,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
-     fetch('https://manikandan-folio.onrender.com/skills')
+     fetch('https://portfoliobackend-5nm3.onrender.com/skills')
       .then(res => res.json())
       .then(data => setSkills(data))
       .catch(err => console.error('Error fetching skills:', err));

@@ -11,7 +11,7 @@ export const Experience = () => {
     AOS.init({ duration: 1000 });
 
 
-    fetch('https://manikandan-folio.onrender.com/experiences')
+    fetch('https://portfoliobackend-5nm3.onrender.com/experiences')
       .then(response => {
         if (!response.ok) {
           throw new Error('Failed to fetch experience data');

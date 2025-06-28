@@ -14,7 +14,7 @@ export const About = () => {
     AOS.init({ duration: 1000 });
 
       
-      fetch('https://manikandan-folio.onrender.com/about')
+      fetch('https://portfoliobackend-5nm3.onrender.com/about')
         .then(res => res.json())
         .then(info => setData(info))
         .catch(err => console.error('Error fetching about data:', err));
@@ -27,12 +27,12 @@ export const About = () => {
           <h3 className="about-subtitle" data-aos="fade-up">About</h3>
           <h1 className="about-title" data-aos="zoom-in">{data.title}</h1>
           <p className="about-description" data-aos="zoom-in">{data.description}</p>
-          <a href="http://localhost:5000/resume.pdf" download className="download-btn">Download CV ⬇</a>
+          <a href="https://portfoliobackend-5nm3.onrender.com/resume.pdf" download className="download-btn">Download CV ⬇</a>
         </div>
 
         <div className="about-image-wrapper" data-aos="zoom-in">
           <div className="image-border"></div>
-          <img src="http://localhost:5000/images/myimg.png"alt="mani" className="about-image" height="300px" />
+          <img src="https://portfoliobackend-5nm3.onrender.com/images/myimg.png"alt="mani" className="about-image" height="300px" />
         </div>
       </div>
     </section>
