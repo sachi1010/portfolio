@@ -12,6 +12,7 @@
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^1.9.0",
+    "dotenv": "^16.5.0",
     "react": "^19.1.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.6.0",
@@ -30,8 +31,6 @@
     "vite": "^6.3.5"
   },
   "engines": {
-  "node": ">=18 <23"
-}
-
-
+    "node": ">=18 <23"
+  }
 }
