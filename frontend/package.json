@@ -6,9 +6,10 @@
   "scripts": {
     "dev": "vite",
     "lint": "eslint .",
-    "postinstall": "chmod +x node_modules/.bin/vite",
-  "build": "npx vite build",
-    "preview": "vite preview"
+    "postinstall": "chmod +x node_modules/.bin/vite", 
+    "build": "[my-framework] build --output public"
+  
+
   },
 
   "dependencies": {
