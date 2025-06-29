@@ -7,7 +7,7 @@
     "dev": "vite",
     "lint": "eslint .",
     "postinstall": "chmod +x node_modules/.bin/vite", 
-    "build": "[my-framework] build --output public"
+    "build": "vite build --output public"
   
 
   },
