@@ -5,10 +5,12 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "npx vite build",
     "lint": "eslint .",
+    "postinstall": "chmod +x node_modules/.bin/vite",
+  "build": "npx vite build",
     "preview": "vite preview"
   },
+
   "dependencies": {
     "aos": "^2.3.4",
     "axios": "^1.9.0",
