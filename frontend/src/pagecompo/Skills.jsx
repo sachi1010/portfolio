@@ -9,7 +9,7 @@ const Skills = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
 
-     fetch('https://portfoliobackend-5nm3.onrender.com/skills')
+     fetch(`${import.meta.env.VITE_SERVER_APP_URL}/skills`)
       .then(res => res.json())
       .then(data => setSkills(data))
       .catch(err => console.error('Error fetching skills:', err));

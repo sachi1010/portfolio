@@ -51,7 +51,7 @@ export const Home = () => {
 
           <div className="hero-buttons">
             <button className="custom-btn btn-6" onClick={goToContactPage}><span>Contact Me</span></button>
-            <a href="https://portfoliobackend-5nm3.onrender.com/resume.pdf" download className=" custom-btn btn-6">
+            <a href={`${import.meta.env.VITE_SERVER_APP_URL}/resume.pdf`} download className=" custom-btn btn-6">
               Get Resume <i className="bi bi-download"></i>
             </a>
 
@@ -59,7 +59,7 @@ export const Home = () => {
         </div>
 
         <div className="hero-right">
-          <img src="https://portfoliobackend-5nm3.onrender.com/images/myimg.png" alt="profile" className="hero-image" />
+          <img src={`${import.meta.env.VITE_SERVER_APP_URL}/images/myimg.png`} alt="profile" className="hero-image" />
           <div className="social-icons">
             <a href="#"><i className="bi bi-facebook"></i></a>
             <a href="#"><i className="bi bi-whatsapp"></i></a>

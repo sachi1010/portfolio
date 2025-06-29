@@ -23,7 +23,7 @@ export const Contact = () => {
     e.preventDefault();
 
     try {
-      const response = await fetch('https://portfoliobackend-5nm3.onrender.com/contact', {
+      const response = await fetch(`${import.meta.env.VITE_SERVER_APP_URL}/contact`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json'
