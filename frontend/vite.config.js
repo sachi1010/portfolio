@@ -8,7 +8,7 @@ export default defineConfig({
 
   base: './', // or '/your-subpath/' if hosted under a sub-directory
   build: {
-    outDir: 'build',
-  },
+    outDir: 'dist'  // must be "dist" for Vercel unless you customize settings
+  }
 })
 
